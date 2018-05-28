@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <EditText
+        android:id="@+id/topo_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/usemap_textview"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_bg"
+        android:hint="Enter topo id"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/usemap_textview"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:letterSpacing="0.06"
+        android:stateListAnimator="@null"
+        android:text="Usemap"
+        android:textAllCaps="true"
+        android:textColor="@color/login_textcolor"
+        android:textSize="@dimen/buttontext" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/histroy_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setlocation_button"
+        android:layout_below="@+id/topo_edittext"></android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/setlocation_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/whiteroundedbg"
+        android:letterSpacing="0.06"
+        android:stateListAnimator="@null"
+        android:text="@string/setlocation"
+        android:textAllCaps="true"
+        android:textColor="@color/login_textcolor"
+        android:textSize="@dimen/buttontext" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

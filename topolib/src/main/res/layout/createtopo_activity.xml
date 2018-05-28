@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbackground_black">
+
+        <ImageView
+            android:id="@+id/flat_icon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/flat" />
+
+        <EditText
+            android:id="@+id/flat_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/flat_icon"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            android:hint="@string/flat"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@drawable/searchcursor"
+            android:textSize="@dimen/edittext" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/whiteroundedbg"
+        android:letterSpacing="0.06"
+        android:stateListAnimator="@null"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textColor="@color/login_textcolor"
+        android:textSize="@dimen/buttontext" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
