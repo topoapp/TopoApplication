@@ -59,7 +59,7 @@ public class HomeActivity extends Activity {
 
         Utility.startPermissionActivity(HomeActivity.this, 124);
         usemap_textview = (TextView) findViewById(R.id.usemap_textview);
-        /*usemap_textview.setOnClickListener(new View.OnClickListener() {
+        usemap_textview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomeActivity.this, MapActivity.class);
@@ -68,7 +68,7 @@ public class HomeActivity extends Activity {
                 i.putExtra("usercountry", usercountry);
                 startActivity(i);
             }
-        });*/
+        });
 
         apiInterface = APIClient.getClient().create(APIInterface.class);
         progressbar.setVisibility(View.VISIBLE);
